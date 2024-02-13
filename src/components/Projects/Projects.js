@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import ProjectCard from "../Projects/ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
@@ -8,7 +8,7 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
-
+// import ExperienceCards from "../Experience/ExperienceCards"
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -75,6 +75,16 @@ function Projects() {
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
+          {/* <Col  md={4} className="project-card"> */}
+          {/* <ExperienceCards
+              imgPath={suicide}
+              isBlog={false}
+              title="Ai For Social Good"
+              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+            />
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
