@@ -1,4 +1,5 @@
 This project was built using these technologies.
+<a href="https://shauryatiwari.com target="_blank"</a>
 
 - React.js
 - Node.js
