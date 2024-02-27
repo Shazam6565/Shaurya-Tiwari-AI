@@ -8,6 +8,12 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import SA from "../../Assets/Projects/SA.png";
+import metatrader from "../../Assets/Projects/metatrader.gif";
+import sentiment from "../../Assets/Projects/sentiment.gif"
+import cliques from "../../Assets/Projects/cliques.gif"
+
+
 // import ExperienceCards from "../Experience/ExperienceCards"
 function Projects() {
   return (
@@ -23,34 +29,37 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
+                imgPath={sentiment}
+                isBlog={false}
               title="Sentiment Analysis"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              description="Stealing Ur Feelings is a deep learning-powered AR experience which analyzes your facial reactions to reveal the dangers of Big Tech's emotional surveillance programs. Using the AI techniques described in corporate patents, Stealing Ur Feelings learns your deepest secrets just by analyzing your face."
+              ghLink="https://github.com/Shazam6565/Sentiment-Analysis"
+              demoLink="https://stealingurfeelin.gs"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={cliques}
               isBlog={false}
               title="Improved Algorithm for Maximal Clique Discovery"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="Designed and implemented C++ algorithms for uncertain network analysis, improving speed by 25% and accuracy by 15% for social networks. Our Maximal Clique Algorithm reduced computational needs by 30% for datasets exceeding 350,000 nodes."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
+              pdfLink=""
+
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={metatrader}
               isBlog={false}
               title="Algorithmic Trading"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              description="Implemented a trio of S&P 500 algorithmic trading strategies leveraging Python, pandas, NumPy, and Matplotlib, encompassing the development of an Equal-weight index fund, Momentum investing, and Value investing strategies. This project aimed to enhance portfolio performance by integrating varied financial theories."
+              ghLink="https://github.com/Shazam6565/Trading-Algo/tree/main"
+              demoLink="https://www.tradingview.com/chart/vZeKfHCJ/?symbol=NYSE%3AGS"   
+              pdfLink="https://docs.google.com/document/d/1WBKSGyQJhyFJl75_SqjhqLjzwEu8lEEajTmUqJW4qoc/edit?usp=sharing"           
             />
           </Col>
 

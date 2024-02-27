@@ -19,9 +19,6 @@ function ProjectCards(props) {
         </Button>
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -33,6 +30,15 @@ function ProjectCards(props) {
             {"Demo"}
           </Button>
         )}
+        {/* Updated button for opening a PDF in a new tab */}
+        <Button
+          variant="secondary"
+          href={props.pdfLink} // Assuming `pdfLink` is the prop for the PDF URL
+          target="_blank"
+          style={{ marginLeft: "10px" }}
+        >
+          {"Learn More"}
+        </Button>
       </Card.Body>
     </Card>
   );
