@@ -4,11 +4,7 @@ import ProjectCard from "../Projects/ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import SA from "../../Assets/Projects/SA.png";
 import metatrader from "../../Assets/Projects/metatrader.gif";
 import sentiment from "../../Assets/Projects/sentiment.gif"
 import cliques from "../../Assets/Projects/cliques.gif"
@@ -44,7 +40,7 @@ function Projects() {
               isBlog={false}
               title="Improved Algorithm for Maximal Clique Discovery"
               description="Designed and implemented C++ algorithms for uncertain network analysis, improving speed by 25% and accuracy by 15% for social networks. Our Maximal Clique Algorithm reduced computational needs by 30% for datasets exceeding 350,000 nodes."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              ghLink="https://github.com/adityasugandhi/Improved-Algorithms-in-finding-maximal-and-maximum-clique-in-uncertain-networks"
               demoLink="https://blogs.soumya-jit.tech/"
               pdfLink=""
 
