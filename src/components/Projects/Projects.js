@@ -42,7 +42,7 @@ function Projects() {
               description="Designed and implemented C++ algorithms for uncertain network analysis, improving speed by 25% and accuracy by 15% for social networks. Our Maximal Clique Algorithm reduced computational needs by 30% for datasets exceeding 350,000 nodes."
               ghLink="https://github.com/adityasugandhi/Improved-Algorithms-in-finding-maximal-and-maximum-clique-in-uncertain-networks"
               demoLink="https://blogs.soumya-jit.tech/"
-              pdfLink=""
+              pdfLink="https://docs.google.com/presentation/d/1Qo-6HVTsNiy4vpg40VdH5ie5t3CfMmItGheyzY4Q6ZA/present?slide=id.p"
 
             />
           </Col>
@@ -66,7 +66,7 @@ function Projects() {
               title="Real Estate Price Prediction"
               description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+              demoLink="https://chat.openai.com/g/g-DtpzQqUta-shaurya-tiwari"
             />
           </Col>
 

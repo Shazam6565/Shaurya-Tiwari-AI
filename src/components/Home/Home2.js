@@ -14,44 +14,42 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
-          </Col>
+        <Col md={6} className="home-about-description">
+    <h1 style={{ fontSize: "2.6em" }}>
+        ABOUT <span className="purple"> ME </span>
+    </h1>
+    <p className="home-about-body">
+        As a passionate <b className="purple">Software Engineer</b> with a Master's from FSU, 
+        my journey in <i><b className="purple">Data Mining, Data Science, and Machine Learning</b></i> 
+        has been marked by continuous learning and application. 
+        <br /><br />
+        My expertise spans <b className="purple">Data Analytics Tools</b> like 
+        <i> Microsoft Power BI, Azure Synapse Analytics,</i> and <i><b className="purple">Web Development Tools</b> 
+        such as Django, Angular, React, and Flask</i>, enabling me to build solutions that tackle complex challenges.
+        <br /><br />
+        With experience at <b className="purple">C.O.A.P.S FSU</b> and <i>ACS Pvt. Ltd.,</i> 
+        I've honed my skills in <b className="purple">high-traffic web environments and strategic data analysis</b>,
+        contributing to tech-driven solutions with a focus on efficiency and innovation.
+    </p>
+</Col>
+<Col md={6} className="home-about-description">
+    <h2 style={{ fontSize: "2.4em" }}>
+        MY <span className="purple">EXPERTISE</span>
+    </h2>
+    <p className="home-about-body">
+        I excel in <b className="purple">Programming Languages</b> like <i>Python, C/C++, JavaScript,</i> and more,
+        equipped to tackle diverse challenges across the tech spectrum.
+        <br /><br />
+        My projects, such as <i><b className="purple">Personalized Chatbots</b></i> and 
+        <b className="purple"> Algorithmic Trading Strategies</b>, reflect my ability to apply 
+        <i>cutting-edge techniques</i> for practical, real-world applications.
+        <br /><br />
+        I am eager to leverage my <b className="purple">data expertise</b> and 
+        <i>web development prowess</i> in a full-time role, 
+        driving forward with strategic analysis and innovative solutions.
+    </p>
+</Col>
+
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
