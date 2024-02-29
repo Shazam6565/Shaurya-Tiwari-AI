@@ -14,42 +14,14 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-        <Col md={6} className="home-about-description">
-    <h1 style={{ fontSize: "2.6em" }}>
-        ABOUT <span className="purple"> ME </span>
-    </h1>
-    <p className="home-about-body">
-        As a passionate <b className="purple">Software Engineer</b> with a Master's from FSU, 
-        my journey in <i><b className="purple">Data Mining, Data Science, and Machine Learning</b></i> 
-        has been marked by continuous learning and application. 
-        <br /><br />
-        My expertise spans <b className="purple">Data Analytics Tools</b> like 
-        <i> Microsoft Power BI, Azure Synapse Analytics,</i> and <i><b className="purple">Web Development Tools</b> 
-        such as Django, Angular, React, and Flask</i>, enabling me to build solutions that tackle complex challenges.
-        <br /><br />
-        With experience at <b className="purple">C.O.A.P.S FSU</b> and <i>ACS Pvt. Ltd.,</i> 
-        I've honed my skills in <b className="purple">high-traffic web environments and strategic data analysis</b>,
-        contributing to tech-driven solutions with a focus on efficiency and innovation.
-    </p>
-</Col>
-<Col md={6} className="home-about-description">
-    <h2 style={{ fontSize: "2.4em" }}>
-        MY <span className="purple">EXPERTISE</span>
-    </h2>
-    <p className="home-about-body">
-        I excel in <b className="purple">Programming Languages</b> like <i>Python, C/C++, JavaScript,</i> and more,
-        equipped to tackle diverse challenges across the tech spectrum.
-        <br /><br />
-        My projects, such as <i><b className="purple">Personalized Chatbots</b></i> and 
-        <b className="purple"> Algorithmic Trading Strategies</b>, reflect my ability to apply 
-        <i>cutting-edge techniques</i> for practical, real-world applications.
-        <br /><br />
-        I am eager to leverage my <b className="purple">data expertise</b> and 
-        <i>web development prowess</i> in a full-time role, 
-        driving forward with strategic analysis and innovative solutions.
-    </p>
-</Col>
-
+          <Col md={8} className="home-about-description">
+            <h1 style={{ fontSize: "2.6em" }}>
+              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+            </h1>
+            <p className="home-about-body">
+  Embarking on a tech odyssey with a toolkit of data mining, data science, and machine learning, I'm charting my course towards a Master's degree in Computer Science from FSU by May 2024. Currently, I'm diving deep into the digital depths at the Center of Oceanic and Atmospheric Prediction Sciences, where I'm not just working—I'm evolving. On the lookout for a full-time role where I can unleash my data prowess to solve intricate puzzles, I'm all about leveraging strategic analysis and cutting-edge solutions to navigate the uncharted waters of technology.
+</p>
+          </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
