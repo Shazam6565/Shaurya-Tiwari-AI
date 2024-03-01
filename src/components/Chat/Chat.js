@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-// import axios from 'axios';
 
 const Title = styled.h1`
   color: purple; // Sets the title color to purple
