@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-  Embarking on a tech odyssey with a toolkit of data mining, data science, and machine learning, I'm charting my course towards a Master's degree in Computer Science from FSU by May 2024. Currently, I'm diving deep into the digital depths at the Center of Oceanic and Atmospheric Prediction Sciences, where I'm not just working—I'm evolving. On the lookout for a full-time role where I can unleash my data prowess to solve intricate puzzles, I'm all about leveraging strategic analysis and cutting-edge solutions to navigate the uncharted waters of technology.
+  Embarking on a tech odyssey with a toolkit of data mining, data science, and machine learning, I'm charting my course towards a <span className="purple">Masters Degree in Computer Science</span> from<span className = "purple"> <a href="https://www.fsu.edu">FSU</a></span> by May 2024. Currently, I'm diving deep into the digital depths at the <a href="https://www.coaps.fsu.edu/contact/our-people/students">Center of Oceanic and Atmospheric Prediction Sciences</a>, where I'm not just working—I'm evolving. On the lookout for a full-time role where I can unleash my data prowess to solve intricate puzzles, I'm all about leveraging strategic analysis and cutting-edge solutions to navigate the uncharted waters of technology.
 </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +67,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/shaurya.tiwari_/"
+                  href="https://www.instagram.com/sh.a.zam/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

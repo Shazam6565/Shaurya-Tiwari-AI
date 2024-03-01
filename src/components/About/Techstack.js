@@ -1,27 +1,20 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava
+import { 
+  DiJavascript1, 
+  DiNodejs, 
+  DiPython, 
+  DiJava 
 } from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { FaPhp, FaSwift } from "react-icons/fa"; // PHP and Swift icons
+import { SiCsharp, SiLatex} from "react-icons/si"; // C#, LaTeX, and Bash icons
+// Note: For Matlab, no direct icon exists in `react-icons`, consider using a placeholder or a custom SVG
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      {/* Existing icons */}
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>
@@ -29,34 +22,7 @@ function Techstack() {
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
@@ -64,6 +30,22 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
       </Col>
+      {/* Added icons */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCsharp />
+      </Col>
+      {/* Placeholder for Matlab, consider using a generic icon or a custom SVG */}
+      
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLatex />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaPhp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaSwift />
+      </Col>
+      {/* Note: If you find icons for Matlab or other specific tools not covered, add them here */}
     </Row>
   );
 }

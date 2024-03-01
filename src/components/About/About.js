@@ -16,14 +16,13 @@ function About() {
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
+              paddingTop: "3px",
+              paddingBottom: "0px",
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Get to know who <strong className="purple">I AM</strong>
             </h1>
-            <Aboutcard />
           </Col>
           <Col md={6} className="home-about-description">
     <h1 style={{ fontSize: "2.6em" }}>
