@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h1`
-  color: purple; // Sets the title color to purple
   text-align: center; // Centers the title
+  margin-top: 20px; // Adds a top margin of 40px
+  font-size: 36px; // Sets the font size to 36px
+  font-weight: 700; // Sets the font weight to 700
+  line-height: 1.1; // Sets the line height to 1.1
+  margin-bottom: 20px; // Adds a bottom margin of 20px
+  color: #fff; // Sets the color to white
+
 `;
 
 
@@ -15,17 +21,24 @@ const ChatContainer = styled.div`
   height: 100vh;
   background: url('/Users/shauryatiwari/Desktop/Shaurya-Tiwari-AI/src/Assets/Projects/sentiment.gif') no-repeat center center fixed;
   background-size: cover;
+  padding: 10px; /* Add some padding around the container */
 `;
 
 const ChatBox = styled.div`
-  width: 1050px;
-  height: 600px;
+  width: 90%; /* Use a percentage for the width to make it responsive */
+  max-width: 1050px; /* Maximum width to ensure it doesn't get too wide on large screens */
+  height: auto; /* Adjust height automatically */
+  max-height: 600px; /* Maximum height */
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   background: black;
+  @media (max-width: 768px) { /* Adjustments for smaller screens */
+    width: 100%; /* Use full width for small devices */
+    border-radius: 0; /* Optional: remove border-radius for a full-width look */
+  }
 `;
 
 const MessageList = styled.div`
@@ -40,7 +53,10 @@ const Message = styled.div`
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 10px;
-  max-width: 50%;
+  max-width: 80%; /* Allow messages to take more width on smaller screens */
+  @media (max-width: 768px) {
+    max-width: 90%; /* Increase max width for very small devices */
+  }
 `;
 
 const InputArea = styled.div`
@@ -69,17 +85,7 @@ const SendButton = styled.button`
 
 
 
-// function Chat() {
-//     return (
-//       <ChatContainer>
-//         <ChatBox>
-//           {/* Display the message indicating the model training is ongoing */}
-//           <p>The chatbot is currently undergoing training. Kindly visit back soon!</p>
-//         </ChatBox>
-//       </ChatContainer>
-//     );
-//   }
-  
+
 
 // function Chat() {
 //   const [messages, setMessages] = useState([]);
@@ -166,7 +172,7 @@ function Chat() {
   
     return (
       <ChatContainer>
-              <Title>Chatbot with Shaurya's consciousness</Title> {/* Add the title here */}
+              <Title>Chatbot with <strong className="purple">Shaurya's consciousness </strong></Title> {/* Add the title here */}
         <ChatBox>
           <MessageList>
             {messages.map((message, index) => (

@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
+  // Function to render the PDF inside the modal
+  const renderPDFModal = () => (
+    <Modal show={showModal} onHide={handleCloseModal} size="lg">
+      <Modal.Header closeButton>
+        <Modal.Title>PDF Documentation</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        {/* Here you can use an iframe or a PDF viewer component to display your PDF */}
+        <iframe src={props.pdfLink} width="100%" height="500px"></iframe>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={handleCloseModal}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
+  );
+
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -18,29 +42,24 @@ function ProjectCards(props) {
           {props.isBlog ? "Blog" : "GitHub"}
         </Button>
         {"\n"}
-        {"\n"}
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "2px" }}
           >
             <CgWebsite /> &nbsp;
             {"Demo"}
           </Button>
         )}
-        {/* Updated button for opening a PDF in a new tab */}
-        <Button
-          variant="secondary"
-          href={props.pdfLink} // Assuming `pdfLink` is the prop for the PDF URL
-          target="_blank"
-          style={{ marginLeft: "10px" }}
-        >
-          {"Learn More"}
+        <Button onClick={handleOpenModal} style={{ marginLeft: "6px" }}>
+          {"Documentation"}
         </Button>
       </Card.Body>
+      {renderPDFModal()}
     </Card>
   );
 }
+
 export default ProjectCards;
