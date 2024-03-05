@@ -11,6 +11,9 @@ function ProjectCards(props) {
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
+// Function to render the PDF inside the modal
+// Function to render the PDF inside the modal
+
   // Function to render the PDF inside the modal
   const renderPDFModal = () => (
     <Modal show={showModal} onHide={handleCloseModal} size="lg">
