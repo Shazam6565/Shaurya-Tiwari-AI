@@ -19,7 +19,7 @@ function ProjectCards(props) {
       </Modal.Header>
       <Modal.Body>
         {/* Here you can use an iframe or a PDF viewer component to display your PDF */}
-        <iframe src={props.pdfLink} width="100%" height="500px"></iframe>
+        <iframe title="Documentation" src={props.pdfLink} width="100%" height="500px"></iframe>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleCloseModal}>
