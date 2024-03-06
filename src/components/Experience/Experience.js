@@ -18,7 +18,7 @@ function Experience() {
         From Insights to <strong className="purple">IMPACT: </strong> My Professional <strong className="purple">Experience </strong> 
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Below Mentioned are the organisation which helped me shape my  <strong className="purple">CAREER </strong>  as well as  <strong className="purple">PERSONALITY </strong> 
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
