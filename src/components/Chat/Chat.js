@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Animationtype from '../Home/Type'; // Adjust the path according to your file structure
-import Typewriter from "typewriter-effect";
+// import Animationtype from '../Home/Type'; // Adjust the path according to your file structure
+// import Typewriter from "typewriter-effect";
 import axios from 'axios';
 
 
@@ -131,6 +131,7 @@ function Chat() {
 
   return (
     <ChatContainer>
+       <Title>Chatbot with <strong className="purple">Shaurya's consciousness </strong></Title> {/* Add the title here */}
       <ChatBox>
         <MessageList>
           {messages.map((message, index) => (
