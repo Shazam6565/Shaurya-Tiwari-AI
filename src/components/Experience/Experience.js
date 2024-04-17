@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import Coaps from "../../Assets/Projects/coaps-logo.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
@@ -23,10 +23,11 @@ function Experience() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={Coaps}
               isBlog={false}
-              title="Web Developer"
-              description="webdevlopment"
+              title="Lead Web Developer C.O.A.P.S"
+              description="In a recent project, I spearheaded the development and migration of Joomla CMS websites from version 3 to 5, a pivotal upgrade that significantly improved site functionality and user engagement. This initiative led to a remarkable 35% increase in user engagement, showcasing my ability to enhance website performance and visitor satisfaction effectively.
+              I have also taken the lead on managing projects with a sophisticated tech stack that includes Nginx, Redis, AWS, and Node.js. These projects have catered to high-demand environments, reliably serving an average of 500,000 monthly visitors. My role demonstrated a profound capability in handling high-traffic websites, ensuring smooth, efficient operations and optimal performance across the board."
               ghLink="https://github.com/soumyajit4419/Chatify"
               demoLink="https://chatify-49.web.app/"
             />

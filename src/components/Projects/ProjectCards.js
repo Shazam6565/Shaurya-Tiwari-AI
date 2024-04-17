@@ -12,7 +12,7 @@ function ProjectCards(props) {
   const handleCloseModal = () => setShowModal(false);
 
 // Function to render the PDF inside the modal
-// Function to render the PDF inside the modal
+// Function to render the PDF inside the modal3
 
   // Function to render the PDF inside the modal
   const renderPDFModal = () => (

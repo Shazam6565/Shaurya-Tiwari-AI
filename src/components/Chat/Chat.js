@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Animationtype from '../Home/Type'; // Adjust the path according to your file structure
+import Typewriter from "typewriter-effect";
+import axios from 'axios';
+
 
 const Title = styled.h1`
   text-align: center; // Centers the title
@@ -87,112 +91,126 @@ const SendButton = styled.button`
 
 
 
-// function Chat() {
-//   const [messages, setMessages] = useState([]);
-//   const [input, setInput] = useState('');
-
-//   const sendMessage = async () => {
-//     if (!input.trim()) return;
-
-//     const userMessage = { text: input, user: 'You' };
-//     setMessages([...messages, userMessage]);
-
-//     try {
-//       const response = await axios.post('https://api.openai.com/v1/completions', {
-//         model: 'ft:babbage-002:personal:shazam2:8x1RcwpO',
-//         prompt: input,
-//         max_tokens: 50,
-//         temperature: 0.5,
-
-//       }, {
-//         headers: {
-//           'Content-Type': 'application/json',
-//           'Authorization': `Bearer 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`
-//         }
-//       });
-
-//       console.log(response);
-//       setMessages(messages => [...messages, { user: 'bot', text: response.data.choices[0].text.trim() }]);
-//     } catch (error) {
-//       console.error('Error sending message:', error);
-//       // Handle error (e.g., show an error message)
-//     }
-
-//     setInput('');
-//   };
-
-//   const handleSendMessage = async () => {
-//     await sendMessage();
-//   };
-
-//   return (
-//     <ChatContainer>
-//       <ChatBox>
-//         <MessageList>
-//           {messages.map((message, index) => (
-//             <Message key={index} isUser={message.user === 'You'}>
-//               {message.text}
-//             </Message>
-//           ))}
-//         </MessageList>
-//         <InputArea>
-//           <Input
-//             value={input}
-//             onChange={(e) => setInput(e.target.value)}
-//             placeholder="Type your message here..."
-//             onKeyDown={async (e) => e.key === 'Enter' && await handleSendMessage()}
-//           />
-//           <SendButton onClick={handleSendMessage}>Send</SendButton>
-//         </InputArea>
-//       </ChatBox>
-//     </ChatContainer>
-//   );
-// }
-
-
 function Chat() {
-    const [messages, setMessages] = useState([]);
-    const [input, setInput] = useState('');
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState('');
+
+  const sendMessage = async () => {
+    if (!input.trim()) return;
+
+    const userMessage = { text: input, user: 'You' };
+    setMessages([...messages, userMessage]);
+
+    try {
+      const response = await axios.post('https://api.openai.com/v1/completions', {
+        model: 'ft:babbage-002:personal:shazam2:8x1RcwpO',
+        prompt: input,
+        max_tokens: 50,
+        temperature: 0.5,
+
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer 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`
+        }
+      });
+
+      console.log(response);
+      setMessages(messages => [...messages, { user: 'bot', text: response.data.choices[0].text.trim() }]);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      // Handle error (e.g., show an error message)
+    }
+
+    setInput('');
+  };
+
+  const handleSendMessage = async () => {
+    await sendMessage();
+  };
+
+  return (
+    <ChatContainer>
+      <ChatBox>
+        <MessageList>
+          {messages.map((message, index) => (
+            <Message key={index} isUser={message.user === 'You'}>
+              {message.text}
+            </Message>
+          ))}
+        </MessageList>
+        <InputArea>
+          <Input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Type your message here..."
+            onKeyDown={async (e) => e.key === 'Enter' && await handleSendMessage()}
+          />
+          <SendButton onClick={handleSendMessage}>Send</SendButton>
+        </InputArea>
+      </ChatBox>
+    </ChatContainer>
+  );
+}
+
+
+// function Chat() {
+//     const [messages, setMessages] = useState([]);
+//     const [input, setInput] = useState('');
   
-    const sendMessage = () => {
-      if (!input.trim()) return;
+//     const sendMessage = () => {
+//       if (!input.trim()) return;
   
-      const userMessage = { text: input, user: 'You' };
-      // Instead of making an API call, we directly add a message indicating the training notice.
-      const trainingNotice = { text: "Shaurya's LLM is going under training right now, please re-visit in a while", user: 'bot' };
+//       const userMessage = { text: input, user: 'You' };
+//       // Instead of making an API call, we directly add a message indicating the training notice.
+//       const trainingNotice = { text: "Shaurya's LLM is going under training right now, please re-visit in a while", user: 'bot' };
   
-      setMessages([...messages, userMessage, trainingNotice]);
+//       setMessages([...messages, userMessage, trainingNotice]);
   
-      setInput(''); // Clear the input after sending the message
-    };
+//       setInput(''); // Clear the input after sending the message
+//     };
   
-    const handleSendMessage = () => {
-      sendMessage();
-    };
+//     const handleSendMessage = () => {
+//       sendMessage();
+//     };
   
-    return (
-      <ChatContainer>
-              <Title>Chatbot with <strong className="purple">Shaurya's consciousness </strong></Title> {/* Add the title here */}
-        <ChatBox>
-          <MessageList>
-            {messages.map((message, index) => (
-              <Message key={index} isUser={message.user === 'You'}>
-                {message.text}
-              </Message>
-            ))}
-          </MessageList>
-          <InputArea>
-            <Input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Type your message here..."
-              onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
-            />
-            <SendButton onClick={handleSendMessage}>Send</SendButton>
-          </InputArea>
-        </ChatBox>
-      </ChatContainer>
-    );
-  }
+//     return (
+//       <ChatContainer>
+//               <Title>Chatbot with <strong className="purple">Shaurya's consciousness </strong></Title> {/* Add the title here */}
+//         <ChatBox>
+          
+//             {messages.map((message, index) => (
+//               <Message key={index} isUser={message.user === 'You'}>
+              
+//               <Typewriter
+//               options={{
+//                 strings: [
+//                   message.text
+//                 ],
+//                 autoStart: true,
+//                 loop: true,
+//                 deleteSpeed: 50,
+//               }}
+//             />
+
+//               </Message>
+              
+              
+
+//             ))}
+          
+//           <InputArea>
+//             <Input
+//               value={input}
+//               onChange={(e) => setInput(e.target.value)}
+//               placeholder="Type your message here..."
+//               onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
+//             />
+//             <SendButton onClick={handleSendMessage}>Send</SendButton>
+//           </InputArea>
+//         </ChatBox>
+//       </ChatContainer>
+//     );
+//   }
 
 export default Chat;
