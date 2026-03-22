@@ -1,0 +1,3 @@
+[submodule "claude-learning-template"]
+	path = claude-learning-template
+	url = https://github.com/adityasugandhi/claude-learning-template.git
